@@ -14,8 +14,6 @@ import 'di/di.dart';
 
 
 final navigatorKey = GlobalKey<NavigatorState>();
-
-
 class _App {
   static Future init() async {
     await Future.wait([
