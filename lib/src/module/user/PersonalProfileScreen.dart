@@ -9,7 +9,7 @@ class PersonalProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white30,
+      backgroundColor: Colors.white,
 
 
       body: Padding(
@@ -34,7 +34,7 @@ class PersonalProfileScreen extends StatelessWidget {
                     const SizedBox(height: 4),
                     Text(
                       FirebaseAuth.instance.currentUser?.email ?? 'Không có email', // Lấy email từ FirebaseAuth
-                      style: const TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Colors.black),
                     ),
                   ],
                 ),

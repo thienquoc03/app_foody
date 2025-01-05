@@ -39,7 +39,7 @@
     @override
     Widget build(BuildContext context) {
       return Scaffold(
-        backgroundColor: Colors.white38,
+        backgroundColor: const Color(0xff45C3D2),
         appBar: AppBar(
           backgroundColor: Colors.white38,
           title: Text(_getAppBarTitle(),
@@ -70,7 +70,7 @@
           unselectedLabelStyle: const TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w400,
-            color: Colors.white,
+            color: Colors.white24,
           ),
           selectedItemColor: const Color(0xff45C3D2),
           unselectedItemColor: Colors.black,
