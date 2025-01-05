@@ -33,9 +33,17 @@ class _SignInScreenState extends State<SignInScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    const SizedBox(height: 100),
+                    Center(
+                      child: Image.asset(
+                        'assets/icons/logo1.png', // Replace with your image path
+                        width: 200, // Adjust width as needed
+                        height: 200,
+                        // Adjust height as needed
+                      ),
+                    ),
+                    const SizedBox(height: 1),
                     const Text(
-                      'Welcome!',
+                      'Welcome! To KA KA',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w600,

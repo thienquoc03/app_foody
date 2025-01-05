@@ -20,9 +20,7 @@ class _NotiFakeState extends State<NotiFake> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Thông Báo'),
-      ),
+      backgroundColor: Colors.white30,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

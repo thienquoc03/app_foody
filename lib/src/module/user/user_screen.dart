@@ -21,13 +21,29 @@
       });
       _pageController.jumpToPage(index); // Jump to the respective page
     }
+    String _getAppBarTitle() {
+      switch (_currentIndex) {
+        case 0:
+          return 'Trang chủ';
+        case 1:
+          return 'Thông báo';
+        case 2:
+          return 'Giỏ Hàng';
+        case 3:
+          return 'Thông Tin Cá Nhân';
+        default:
+          return ''; // Or a default title
+      }
+    }
 
     @override
     Widget build(BuildContext context) {
       return Scaffold(
+        backgroundColor: Colors.white38,
         appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: const Text('User Screen'),
+          backgroundColor: Colors.white38,
+          title: Text(_getAppBarTitle(),
+              style: const TextStyle(color: Colors.black)),
         ),
         body: PageView(
           controller: _pageController,
@@ -54,10 +70,10 @@
           unselectedLabelStyle: const TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w400,
-            color: Colors.grey,
+            color: Colors.white,
           ),
           selectedItemColor: const Color(0xff45C3D2),
-          unselectedItemColor: Colors.grey,
+          unselectedItemColor: Colors.black,
           selectedFontSize: 12,
           unselectedFontSize: 12,
           items: const [
